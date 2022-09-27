@@ -24,6 +24,7 @@
 		D84319BD28E188A9009629E6 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84319BC28E188A9009629E6 /* TabBarItem.swift */; };
 		D84319BF28E18AF8009629E6 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84319BE28E18AF8009629E6 /* FeedTableViewCell.swift */; };
 		D84319C128E18F14009629E6 /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84319C028E18F14009629E6 /* Icon.swift */; };
+		D84319C428E1AD61009629E6 /* Floaty in Frameworks */ = {isa = PBXBuildFile; productRef = D84319C328E1AD61009629E6 /* Floaty */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D84319AD28E1668F009629E6 /* SnapKit in Frameworks */,
+				D84319C428E1AD61009629E6 /* Floaty in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +202,7 @@
 			name = Tweet;
 			packageProductDependencies = (
 				D84319AC28E1668F009629E6 /* SnapKit */,
+				D84319C328E1AD61009629E6 /* Floaty */,
 			);
 			productName = Tweet;
 			productReference = D843197828E165A1009629E6 /* Tweet.app */;
@@ -275,6 +278,7 @@
 			mainGroup = D843196F28E165A1009629E6;
 			packageReferences = (
 				D84319AB28E1668F009629E6 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				D84319C228E1AD61009629E6 /* XCRemoteSwiftPackageReference "Floaty" */,
 			);
 			productRefGroup = D843197928E165A1009629E6 /* Products */;
 			projectDirPath = "";
@@ -670,6 +674,14 @@
 				kind = branch;
 			};
 		};
+		D84319C228E1AD61009629E6 /* XCRemoteSwiftPackageReference "Floaty" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kciter/Floaty.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -677,6 +689,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D84319AB28E1668F009629E6 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		D84319C328E1AD61009629E6 /* Floaty */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D84319C228E1AD61009629E6 /* XCRemoteSwiftPackageReference "Floaty" */;
+			productName = Floaty;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
