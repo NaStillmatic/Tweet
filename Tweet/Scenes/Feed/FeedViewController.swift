@@ -9,7 +9,6 @@ import UIKit
 import Floaty
 import SnapKit
 
-
 final class FeedViewControler: UIViewController {
 
   private lazy var presenter = FeedPresenter(viewController: self)
@@ -54,5 +53,14 @@ extension FeedViewControler: FeedProtocol {
     }
 
     writeButon.paddingY = 100.0
+  }
+
+  func reloadTableView() {
+    tableView.reloadData()
+  }
+
+  func moveToTweetViewController(with tweet: Tweet) {
+    let tweetViewController = TweetViewController(tweet: tweet)
+    navigationController?.pushViewController(tweetViewController, animated: true)
   }
 }
