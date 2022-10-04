@@ -7,7 +7,11 @@
 
 import Foundation
 
-protocol TweetProtocol: AnyObject {}
+protocol TweetProtocol: AnyObject {
+  
+  func setViews(tweet: Tweet)
+  func setupViews()
+}
 
 final class TweetPresenter {
 
@@ -18,5 +22,10 @@ final class TweetPresenter {
        tweet: Tweet) {
     self.viewController = viewController
     self.tweet = tweet
+  }
+
+  func viewDidLoad() {
+    viewController?.setViews(tweet: tweet)
+    viewController?.setupViews()
   }
 }
