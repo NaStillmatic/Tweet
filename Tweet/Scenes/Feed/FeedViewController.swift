@@ -17,8 +17,8 @@ final class FeedViewControler: UIViewController {
     let btn = Floaty(size: 50.0)
     btn.sticky = true
     btn.handleFirstItemDirectly = true
-    btn.addItem(title: "") { _ in
-      print("Float!")
+    btn.addItem(title: "") { [weak self] _ in
+      self?.presenter.didTapWriteButton()
     }
     btn.buttonImage = Icon.write.image?.withTintColor(.white, renderingMode: .alwaysOriginal)
     return btn
@@ -35,6 +35,11 @@ final class FeedViewControler: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     presenter.viewDidLoad()
+  }
+
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+    presenter.viewDidAppear()
   }
 }
 
@@ -62,5 +67,11 @@ extension FeedViewControler: FeedProtocol {
   func moveToTweetViewController(with tweet: Tweet) {
     let tweetViewController = TweetViewController(tweet: tweet)
     navigationController?.pushViewController(tweetViewController, animated: true)
+  }
+
+  func moveToWriteViewController() {
+    let writeViewController = UINavigationController(rootViewController: WriteViewController())
+    writeViewController.modalPresentationStyle = .fullScreen
+    present(writeViewController, animated: true)
   }
 }
