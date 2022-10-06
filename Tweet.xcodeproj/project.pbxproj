@@ -11,6 +11,8 @@
 		D80A522728E6F840001972A2 /* TweetPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80A522628E6F840001972A2 /* TweetPresenter.swift */; };
 		D80A522A28EDBEFF001972A2 /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80A522928EDBEFF001972A2 /* WriteViewController.swift */; };
 		D80A522D28EDBF14001972A2 /* WritePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D80A522C28EDBF14001972A2 /* WritePresenter.swift */; };
+		D81ED63728EEBF9D00DDDF3A /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81ED63628EEBF9D00DDDF3A /* ProfileViewController.swift */; };
+		D81ED63A28EEBFBF00DDDF3A /* ProfilePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81ED63928EEBFBF00DDDF3A /* ProfilePresenter.swift */; };
 		D843197C28E165A1009629E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D843197B28E165A1009629E6 /* AppDelegate.swift */; };
 		D843197E28E165A1009629E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D843197D28E165A1009629E6 /* SceneDelegate.swift */; };
 		D843198028E165A1009629E6 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D843197F28E165A1009629E6 /* TabBarViewController.swift */; };
@@ -53,6 +55,8 @@
 		D80A522628E6F840001972A2 /* TweetPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetPresenter.swift; sourceTree = "<group>"; };
 		D80A522928EDBEFF001972A2 /* WriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
 		D80A522C28EDBF14001972A2 /* WritePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritePresenter.swift; sourceTree = "<group>"; };
+		D81ED63628EEBF9D00DDDF3A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		D81ED63928EEBFBF00DDDF3A /* ProfilePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePresenter.swift; sourceTree = "<group>"; };
 		D843197828E165A1009629E6 /* Tweet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tweet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D843197B28E165A1009629E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D843197D28E165A1009629E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +124,24 @@
 			path = Write;
 			sourceTree = "<group>";
 		};
+		D81ED63528EEBF8500DDDF3A /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				D843197F28E165A1009629E6 /* TabBarViewController.swift */,
+				D84319BC28E188A9009629E6 /* TabBarItem.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		D81ED63828EEBFA200DDDF3A /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				D81ED63628EEBF9D00DDDF3A /* ProfileViewController.swift */,
+				D81ED63928EEBFBF00DDDF3A /* ProfilePresenter.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		D843196F28E165A1009629E6 = {
 			isa = PBXGroup;
 			children = (
@@ -147,8 +169,8 @@
 				D843197D28E165A1009629E6 /* SceneDelegate.swift */,
 				D84319C028E18F14009629E6 /* Icon.swift */,
 				D84319B628E16ACE009629E6 /* Managers */,
-				D84319B128E16A37009629E6 /* Scenes */,
 				D84319B028E16A2E009629E6 /* Models */,
+				D84319B128E16A37009629E6 /* Scenes */,
 				D843198428E165A3009629E6 /* Assets.xcassets */,
 				D843198628E165A3009629E6 /* LaunchScreen.storyboard */,
 				D843198928E165A3009629E6 /* Info.plist */,
@@ -185,11 +207,11 @@
 		D84319B128E16A37009629E6 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
-				D84319BC28E188A9009629E6 /* TabBarItem.swift */,
-				D843197F28E165A1009629E6 /* TabBarViewController.swift */,
+				D81ED63528EEBF8500DDDF3A /* TabBar */,
 				D84319BB28E16FAC009629E6 /* Feed */,
 				D80A522828E6F911001972A2 /* Tweet */,
 				D80A522B28EDBF03001972A2 /* Write */,
+				D81ED63828EEBFA200DDDF3A /* Profile */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -356,9 +378,11 @@
 				D84319BD28E188A9009629E6 /* TabBarItem.swift in Sources */,
 				D80A522728E6F840001972A2 /* TweetPresenter.swift in Sources */,
 				D84319B528E16AC8009629E6 /* UserDefaultsManager.swift in Sources */,
+				D81ED63728EEBF9D00DDDF3A /* ProfileViewController.swift in Sources */,
 				D80A522A28EDBEFF001972A2 /* WriteViewController.swift in Sources */,
 				D80A522D28EDBF14001972A2 /* WritePresenter.swift in Sources */,
 				D843197E28E165A1009629E6 /* SceneDelegate.swift in Sources */,
+				D81ED63A28EEBFBF00DDDF3A /* ProfilePresenter.swift in Sources */,
 				D84319B328E16A91009629E6 /* User.swift in Sources */,
 				D84319AF28E169F0009629E6 /* Tweet.swift in Sources */,
 				D80A522528E6F837001972A2 /* TweetViewController.swift in Sources */,

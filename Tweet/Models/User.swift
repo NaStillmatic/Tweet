@@ -9,8 +9,9 @@ import Foundation
 
 struct User: Codable {
 
-  let name: String
-  let account: String
+  var name: String
+  var account: String
 
-  static var shared = User(name: "iDeveloper", account: "NaStillmatic")
+  static var shared = User(name: "iDeveloper",
+                           account: "NaStillmatic")
 }

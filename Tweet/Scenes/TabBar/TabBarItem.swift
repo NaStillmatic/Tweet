@@ -35,7 +35,7 @@ enum TabBarItem: CaseIterable {
     case .feed:
       return UINavigationController(rootViewController: FeedViewControler())
     case .profile:
-      return UIViewController()
+      return UINavigationController(rootViewController: ProfileViewController())
     }
   }
 }
