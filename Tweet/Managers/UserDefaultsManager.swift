@@ -12,7 +12,7 @@ protocol UserDefaultsManagerProtocol {
   func setTweet(_ newValue: Tweet)
 }
 
-struct UserDefaultManager: UserDefaultsManagerProtocol {
+struct UserDefaultsManager: UserDefaultsManagerProtocol {
 
   enum Key: String {
     case tweet
@@ -32,6 +32,7 @@ struct UserDefaultManager: UserDefaultsManagerProtocol {
     var curremtTweet: [Tweet] = getTweet()
       curremtTweet.insert(newValue, at: 0)
 
-      UserDefaults.standard.setValue(try? PropertyListEncoder().encode(curremtTweet), forKey: Key.tweet.value)
+      UserDefaults.standard.setValue(try? PropertyListEncoder().encode(curremtTweet),
+                                     forKey: Key.tweet.value)
   }
 }

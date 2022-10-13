@@ -18,21 +18,24 @@ protocol FeedProtocol: AnyObject {
 final class FeedPresenter: NSObject {
   
   private weak var viewController: FeedProtocol?
+  private let userDefaultsManager: UserDefaultsManagerProtocol
 
   var tweets: [Tweet] = []
 
-  init(viewController: FeedProtocol) {
+  init(viewController: FeedProtocol,
+       userDefaultsManager: UserDefaultsManagerProtocol = UserDefaultsManager()) {
     self.viewController = viewController
+    self.userDefaultsManager = userDefaultsManager
   }
 
   func viewDidLoad() {
     viewController?.setupViews()
-    tweets = UserDefaultManager().getTweet()
+    tweets = UserDefaultsManager().getTweet()
   }
 
-  func viewDidAppear() {
-    tweets = UserDefaultManager().getTweet()
-    viewController?.reloadTableView()
+  func viewWillAppear() {
+      tweets = userDefaultsManager.getTweet()
+      viewController?.reloadTableView()
   }
 
   func didTapWriteButton() {

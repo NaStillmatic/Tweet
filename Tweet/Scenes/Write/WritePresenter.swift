@@ -19,7 +19,7 @@ final class WritePresenter {
   private let userDefaultsManager: UserDefaultsManagerProtocol
 
   init(viewController: WriteProtocol? = nil,
-       userDefaultsManager: UserDefaultsManagerProtocol = UserDefaultManager()) {
+       userDefaultsManager: UserDefaultsManagerProtocol = UserDefaultsManager()) {
     self.viewController = viewController
     self.userDefaultsManager = userDefaultsManager
   }
