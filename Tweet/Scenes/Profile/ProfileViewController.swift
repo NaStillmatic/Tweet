@@ -7,6 +7,7 @@
 
 import UIKit
 import SnapKit
+import Toast
 
 final class ProfileViewController: UIViewController {
 
@@ -93,11 +94,16 @@ extension ProfileViewController: ProfileProtocol {
   func endEdting() {
     view.endEditing(true)
   }
+
+  func showToast() {
+    view.makeToast("변경하고자 하는 내용을 입력해주세요.")
+  }
 }
 
 private extension ProfileViewController {
 
   @objc func didTapSaveButton() {
-    presenter.didTapSaveButton(name: nameTextField.text, account: accountTextField.text)
+    presenter.didTapSaveButton(name: nameTextField.text,
+                               account: accountTextField.text)
   }
 }

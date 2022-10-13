@@ -12,6 +12,7 @@ protocol ProfileProtocol: AnyObject {
   func setupViews()
   func setViews(with name: String, account: String)
   func endEdting()
+  func showToast()
 }
 
 final class ProfilePresenter {
@@ -35,7 +36,10 @@ final class ProfilePresenter {
   func didTapSaveButton(name: String?, account: String?) {
     guard let name = name,
           let account = account,
-          !name.isEmpty, !account.isEmpty else { return }
+          !name.isEmpty, !account.isEmpty else {
+      viewController?.showToast()
+      return
+    }
 
     user.name = name
     user.account = account
