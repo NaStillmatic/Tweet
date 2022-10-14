@@ -34,6 +34,8 @@
 		D84319C428E1AD61009629E6 /* Floaty in Frameworks */ = {isa = PBXBuildFile; productRef = D84319C328E1AD61009629E6 /* Floaty */; };
 		D868F8872907E95F00A9C83A /* MockFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D868F8862907E95F00A9C83A /* MockFeedViewController.swift */; };
 		D868F8892907E95F00A9C83A /* MockUserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D868F8882907E95F00A9C83A /* MockUserDefaultsManager.swift */; };
+		D868F88B2907E95F00A9C83A /* WritePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D868F88A2907E95F00A9C83A /* WritePresenterTests.swift */; };
+		D868F88D2907E95F00A9C83A /* MockWriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D868F88C2907E95F00A9C83A /* MockWriteViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +84,8 @@
 		D84319C028E18F14009629E6 /* Icon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
 		D868F8862907E95F00A9C83A /* MockFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockFeedViewController.swift; sourceTree = "<group>"; };
 		D868F8882907E95F00A9C83A /* MockUserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserDefaultsManager.swift; sourceTree = "<group>"; };
+		D868F88A2907E95F00A9C83A /* WritePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritePresenterTests.swift; sourceTree = "<group>"; };
+		D868F88C2907E95F00A9C83A /* MockWriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWriteViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +250,7 @@
 			children = (
 				D868F8862907E95F00A9C83A /* MockFeedViewController.swift */,
 				D868F8882907E95F00A9C83A /* MockUserDefaultsManager.swift */,
+				D868F88C2907E95F00A9C83A /* MockWriteViewController.swift */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -254,6 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				D843199228E165A3009629E6 /* FeedPresenterTests.swift */,
+				D868F88A2907E95F00A9C83A /* WritePresenterTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -424,6 +430,8 @@
 			files = (
 				D868F8872907E95F00A9C83A /* MockFeedViewController.swift in Sources */,
 				D843199328E165A3009629E6 /* FeedPresenterTests.swift in Sources */,
+				D868F88B2907E95F00A9C83A /* WritePresenterTests.swift in Sources */,
+				D868F88D2907E95F00A9C83A /* MockWriteViewController.swift in Sources */,
 				D868F8892907E95F00A9C83A /* MockUserDefaultsManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
