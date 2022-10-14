@@ -36,6 +36,8 @@
 		D868F8892907E95F00A9C83A /* MockUserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D868F8882907E95F00A9C83A /* MockUserDefaultsManager.swift */; };
 		D868F88B2907E95F00A9C83A /* WritePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D868F88A2907E95F00A9C83A /* WritePresenterTests.swift */; };
 		D868F88D2907E95F00A9C83A /* MockWriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D868F88C2907E95F00A9C83A /* MockWriteViewController.swift */; };
+		D868F88F2907E95F00A9C83A /* TweetPresentetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D868F88E2907E95F00A9C83A /* TweetPresentetTests.swift */; };
+		D868F8912907E95F00A9C83A /* MockTweetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D868F8902907E95F00A9C83A /* MockTweetViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +88,8 @@
 		D868F8882907E95F00A9C83A /* MockUserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockUserDefaultsManager.swift; sourceTree = "<group>"; };
 		D868F88A2907E95F00A9C83A /* WritePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WritePresenterTests.swift; sourceTree = "<group>"; };
 		D868F88C2907E95F00A9C83A /* MockWriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockWriteViewController.swift; sourceTree = "<group>"; };
+		D868F88E2907E95F00A9C83A /* TweetPresentetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetPresentetTests.swift; sourceTree = "<group>"; };
+		D868F8902907E95F00A9C83A /* MockTweetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockTweetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -251,6 +255,7 @@
 				D868F8862907E95F00A9C83A /* MockFeedViewController.swift */,
 				D868F8882907E95F00A9C83A /* MockUserDefaultsManager.swift */,
 				D868F88C2907E95F00A9C83A /* MockWriteViewController.swift */,
+				D868F8902907E95F00A9C83A /* MockTweetViewController.swift */,
 			);
 			path = Mock;
 			sourceTree = "<group>";
@@ -260,6 +265,7 @@
 			children = (
 				D843199228E165A3009629E6 /* FeedPresenterTests.swift */,
 				D868F88A2907E95F00A9C83A /* WritePresenterTests.swift */,
+				D868F88E2907E95F00A9C83A /* TweetPresentetTests.swift */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -429,9 +435,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D868F8872907E95F00A9C83A /* MockFeedViewController.swift in Sources */,
+				D868F8912907E95F00A9C83A /* MockTweetViewController.swift in Sources */,
 				D843199328E165A3009629E6 /* FeedPresenterTests.swift in Sources */,
 				D868F88B2907E95F00A9C83A /* WritePresenterTests.swift in Sources */,
 				D868F88D2907E95F00A9C83A /* MockWriteViewController.swift in Sources */,
+				D868F88F2907E95F00A9C83A /* TweetPresentetTests.swift in Sources */,
 				D868F8892907E95F00A9C83A /* MockUserDefaultsManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
